@@ -1,0 +1,42 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{CJK}
+\usepackage[margin=2cm]{geometry}
+
+\begin{CJK}{UTF8}{bsmi}
+\begin{document}
+
+\section{{\LaTeX} 在 Linux 的安裝方式}
+
+\begin{enumerate}
+\item 首先用 sudo apt-get install latex-cjk-all 安裝套件
+\item 看看下面的範例就知道了
+\end{enumerate}
+
+\begin{verbatim}
+
+\documentclass{article}
+\usepackage{CJK}
+\begin{CJK}{UTF8}{bsmi}
+\begin{document}
+
+{\LaTeX} 中文唷!!
+
+\end{CJK}
+\end{document}
+
+\end{verbatim}
+
+\section{執行 {\LaTeX}}
+
+執行方式
+\begin{itemize}
+\item latex ex1.tex
+\item pdflatex ex1.tex
+\end{itemize}
+
+\section{字型可能存在的路徑}
+/usr/share/texmf
+
+\end{CJK}
+\end{document}
+
